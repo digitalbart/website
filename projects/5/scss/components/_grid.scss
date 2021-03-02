@@ -1,0 +1,66 @@
+
+
+
+// Calculate grid columns
+
+.grid__col {
+  @include mq(medium) {
+    @include g-columns; 
+  }
+}
+
+// Column styles
+[class^="grid__col--"] {
+
+  border-radius: $br;
+  margin-bottom: em(12px);     
+  margin-top: em(12px);
+  padding: 10px;
+
+  @include mq(medium) {
+    @include doubly(percentage($g-gutter-width / $context)); 
+    display: flex;
+    float: left;
+    justify-content: space-evenly;   
+    margin-bottom: em(24px);     
+    margin-top: em(24px);    
+    min-height: 1px;
+  
+    &:last-of-type {
+      float: right;
+      // override float if centered!
+      &.centered {
+        float: none;
+      }
+    }
+  }
+}
+
+.grid__row {
+  @extend %clearfix;
+}
+
+
+.container {
+  @extend %clearfix;
+  @extend .centered;
+  width: 90%;
+ 
+  // Make nested grid 100%
+  [class*="grid__col--"] > & {
+    width: 100%; 
+  }
+
+  // Set a max-width for grid container
+  @include mq(large) {
+    max-width: $g-cont-max-w;
+  }
+}
+
+
+// Generate theme grid display classes
+@each $value, $color in $grid-colors {
+  .#{$value}.theme__colors {
+    background-color: $color;
+  }
+}

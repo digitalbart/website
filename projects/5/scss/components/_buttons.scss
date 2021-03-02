@@ -1,0 +1,23 @@
+// -------------------
+// buttons
+// -------------------
+// 
+
+
+.btn {
+	@include themes($themes);
+}
+
+[class^="btn--"] {
+  @extend %center-align;
+  @extend %btn;
+  margin-bottom: em(20px, 14px); 
+  @include mq(small) {
+    width: 100%;
+  }
+  @include mq(medium) { 
+    width: 100%;
+    display: inline-block;
+    @include doubly(20px);
+  }
+}

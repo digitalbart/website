@@ -1,0 +1,329 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  color: #222;
+  font-family: 'Merriweather', serif;
+  font-weight: 200;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;  
+}
+
+.center {
+  text-align: center;
+}
+
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* text Styles */
+
+h1,
+h2,
+h3 {
+  color: #2D3945;  
+}
+
+.lg-sub-html,
+.lg-sub-html h2,
+.lg-sub-html p {
+  color:#fff;
+}
+
+h1,
+fieldset legend {
+  font-size: 22px;
+  color: #2D3945;
+  font-weight: 700;
+}
+
+form label {
+  font-size: 14px;
+}
+
+footer p {
+  font-style: italic;
+  margin-top: 0;
+}
+
+button {
+  font-family: 'Merriweather', serif; 
+}
+
+/* header styles */
+
+header {  
+  color: #fff;
+  font-size: 1.2em;
+  padding: 1em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 2em;
+}
+
+header input {
+  font-size: 1em;
+  font-weight: 500;
+  margin: 1em auto;
+  width: 100%;
+  max-width: 485px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5em;
+  text-align: left;
+  color: #000;
+}
+
+
+/* main styles */
+
+main {
+  background-color: white;
+  padding:0 16px;
+  color: #b2b0b0;
+}
+
+
+.gallery  {
+  list-style: none; 
+  padding: 1em 0; 
+}
+
+.gallery li {
+  display: block;
+  text-align: center;
+  margin-bottom: 2em;
+  transition:all 0.75s ease;
+  cursor: pointer;
+}
+
+.caption {
+  display: none;
+}
+
+
+/* form styles */
+
+input, textarea, select { 
+  outline: none;
+}
+
+form {
+  border-top: 5px solid #2d3945;  
+  position: relative;
+  padding-top: 24px;
+  margin-top: 32px;
+}
+
+form::before {
+  content: "";
+  position: absolute;
+  border-top: 2px solid #2d3945;  
+  width: 100%;
+  left: 0;  
+  top: 5px;
+}
+
+form input,
+form label {
+  display: block;
+}
+
+.radio input,
+.checkbox input {
+  display: inline;
+  width: auto;
+}
+
+.radio input,
+.checkbox input {
+  margin-right: 1em;
+}
+
+form input,
+form select {
+  background-color: #eff0f1;
+  border-radius: 5px;
+  border: none;
+  margin: 8px 0 16px;  
+  padding: 16px;
+  position: relative;
+  width: 100%;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border: 2px solid #46698b;
+  box-shadow: none;
+}
+
+select, input, button {
+    border-width: 0px;
+}
+
+input::placeholder {
+  font-style: italic;
+  text-align: left;
+  font-size: 1em;
+}
+
+/*
+.newsletter-details {
+  border-top: 2px solid black;
+  margin-top: -50px;
+} */
+
+  .newsletter-details legend {
+    border-top: 2px solid black;
+    display: block;
+    margin-bottom: 0;
+    padding-top: 1em;
+    width: 100%;
+  } 
+
+.textarea {
+  margin-top: 1em;
+}
+
+  .textarea label {
+    margin-bottom: 1em
+  }
+
+  .textarea textarea {
+      background-color: #eff0f1;
+      border: 0;
+      border-radius: 5px;
+      padding: 1em;
+      width: 100%;
+      min-height: 100px;
+    }
+
+button[type="submit"] {
+  background-color: #4ebbb5;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin: 16px 0;
+  padding: 16px;
+  width: 100%;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  margin-bottom: 16px;
+}
+
+/* footer styles */
+
+footer {
+  color: #b2b0b0;
+  min-height: 30px;
+  padding: 16px;
+  width: 100%;
+}
+
+
+
+.wrapper,
+.clearfix {
+  clear: both;
+  display: table;
+}
+
+/* Styles for the tablet screens */
+
+@media screen and (min-width: 540px) {
+
+  .gallery li {
+    width: 50%;
+    float: left;    
+  }
+
+  main {
+    max-width: 541px;
+    margin: 0 auto;
+    overflow: auto; /* prevent footer moving up because of floats */
+  }
+
+}
+
+@media screen and (min-width: 780px) {
+
+  .gallery li {
+    width: 33%;
+    float: left;
+  }
+
+  main {
+    max-width: 781px;
+    margin: 0 auto;    
+  }
+
+  label {
+    display: inline-block;
+    float: left;
+    width: 25%;
+  }
+
+  .display-flex {
+      display: flex;
+      align-items: center;
+  }  
+
+  .radio input,
+  .checkbox input {
+    margin-top: 2px;
+  }
+
+  .checkbox,
+  .radio {
+    margin-bottom: 0.75em;
+  }
+
+  form input,
+  form select {
+    display: inline-block;
+    float: left;
+    margin: 1em 0;
+    width: 75%;
+  }
+
+  .newsletter-details label {
+    width: 100%;
+  }
+
+
+
+} 
+
+@media screen and (min-width: 1024px) {
+
+  main {
+    max-width: 1025px;
+    margin: 0 auto;
+  }
+
+  .gallery li {
+    width: 25%;
+    float: left;
+  }
+
+}
+

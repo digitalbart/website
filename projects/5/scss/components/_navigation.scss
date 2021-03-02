@@ -1,0 +1,35 @@
+
+.nav {
+	margin-top: em(20px);
+	margin-bottom: em(30px);
+	list-style-type: none;
+	padding-left: 0;
+	@include mq(small) {
+		margin-bottom: 6em;	
+  	}
+
+  @include e(item) {
+    @extend %nav-item-horz;
+    a {
+      @extend %nav-item-link;
+      &:hover {
+        @extend %nav-item-on;
+      }
+    }
+
+    &:first-child {
+    	a {
+    		@extend %nav-item-on;
+    	}	    	
+    }
+    
+    @include m(current) {
+      @extend %nav-item-horz;
+      a {
+        @extend %nav-item-link;
+        @extend %nav-item-on;
+      }    
+    }
+    
+  }
+}

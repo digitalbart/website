@@ -1,0 +1,84 @@
+// -------------------
+// typography
+// -------------------
+// 
+
+.headline {
+
+
+	&--primary {
+		color: $teal;
+		font-size: 2em;
+		padding: 0 0.5em;
+		line-height: 1.1em;
+	}
+
+	&--secondary {
+		//margin-top: 6em;
+	}
+
+
+}
+
+
+
+a {
+	color: $light-blue;
+	font-weight: 700;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+em {
+	font-style: italic;
+}
+
+
+.blockquote {
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: 350;	
+	line-height: 1.25em;	
+	position: relative;
+
+	&::after {	
+		border-radius: $br;	
+	    border-left: 8px solid $teal;
+	    content: ' ';
+	    position: absolute;
+	    height: 100%;
+	    width: 7px;
+	    left: -1em;
+	    top: 0;
+	}
+}
+
+
+#grid,
+#buttons,
+#images {
+	@include mq(small) {
+		margin: 4em 0;
+	}
+	font-weight: 300;
+}
+
+#forms {
+	@include mq(small) {
+		margin-top: 4em;
+	}
+	font-weight: 300;
+}
+
+#type {
+	font-family: 'Open Sans', sans-serif;
+	color: $color-body;	
+	font-weight: 300;
+	@include mq(small) {
+		margin-top: 6em;
+	}
+	margin-top: 0;
+}

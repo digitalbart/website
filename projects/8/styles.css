@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #111;    
+    background: url('svgs/background.svg') repeat #edeff0;
+}
+
+#container {
+    max-width: 960px;
+    background: #fff;
+    margin: 0 auto;
+    height: 100%;
+    /* new line */
+}
+
+p {
+    max-width: 350px;
+    margin: 35px auto 0;
+    line-height: 2em;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #39add1;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #111;
+}
+
+header {
+    padding-top: 10px;
+}
+
+header nav {
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    transition: all ease-out .1s;
+}
+header nav ul li:hover {
+  transform: scale(1.2);
+  }
+
+nav svg {
+    background-position: left;
+    fill: #39ADD1;
+    height: 16px;
+    vertical-align: initial;
+    width: 16px;
+}
+
+header nav ul li:hover svg {
+    fill: #000;
+}
+
+svg {
+    height: 0;
+}
+
+
+main {
+    padding-top: 50px;
+}
+
+.logo {
+    width: 140px;
+    height: 120px;
+}
+
+.logo {
+  transition: all ease-in .35s;  
+}
+
+.logo:hover  {
+  transform: scale(1.3) rotate(360deg);    
+}
+
+.logo__background-circle {
+    fill: rgba(186, 128, 88, 1);    
+}
+
+.logo__text {
+    fill: #EAAA7F;    
+}
+
+.logo__paws {
+    fill: #F4C6A6;    
+}
+
+.logo__text {
+    display: none;
+}
+
+@media (min-width: 426px) {
+    .logo__mobile {
+        display: none;
+    }
+    .logo__text {
+        display: inline-block;
+    }
+}
+
+main h2 {
+    font-size: 28px;
+}
+
+.corgi {
+    height: 170px;
+    width: 170px;
+    margin: 0 1em;
+    transition: all ease-in .5s;  
+}
+
+.corgi:hover {
+  transform: rotate(720deg);
+  }
+
+#corgi .nose_and_eyes {
+    fill: #2D3339;
+}
+
+#corgi .brows {
+    fill: #DA8058;
+}
+
+#corgi .white {
+    fill: #FBFEFF;
+}
+
+.sable.corgi {
+    fill: #B97F5B;
+}
+
+.fawn.corgi {
+    fill: #E9AA82;
+}
+
+.red.corgi {
+    fill: #834B29;
+}
+
+.stone.corgi {
+    fill: #52595E;
+}
+
+footer {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    color: #ba8058;
+}

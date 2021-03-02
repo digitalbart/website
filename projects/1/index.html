@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Brian Barthold's Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="main-nav">
+    <ul class="nav">
+      <li class="name">Brian Barthold</li>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+    </ul>
+  </div>
+
+  <header>
+    <img src="images/me.png" alt="Drawing of Brian Barthold" class="profile-image">
+    <h1 class="tag name">Hello, I’m Brian.</h1>
+    <p class="tag location">My home is Northwest, Indiana.</p>
+  </header>
+
+  <main class="flex">
+    <div class="card">
+      <h2>Background</h2>
+      <p>I’m an aspiring web designer who loves everything about the web. </p>
+      <p>I currently do backend programing and I am learning more about the frontend aspect of web design. I also like home
+        automation, cooking and hiking. </p>
+    </div>
+
+    <div class="card">
+      <h2>Goals</h2>
+      <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Offline websites</li>
+      </ul>
+      <p>I’d like to work for a web design agency helping clients create an impressive online presence.</p>
+    </div>
+
+  </main>
+  <footer>
+    <ul>
+      <li>
+        <a href="https://twitter.com/digitalbart" class="social twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="https://stackoverflow.com/users/323721/brian-barthold" class="social linkedin">Stackoverflow</a>
+      </li>
+      <li>
+        <a href="https://github.com/digitalbart" class="social github">Github</a>
+      </li>
+    </ul>
+    <p class="copyright">Copyright 2017, Brian Barthold</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  background: #f7f5f0;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.col,
+.wrapper, 
+.col-half {
+  width: 100%;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Nav Styles */
+
+.nav {
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav li {
+  background-color: white;
+  margin: 10px;
+  padding: 10px 0;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: #e0ab26;    
+}
+
+/* header styles */
+
+header {
+  padding: 0 16px;  
+}
+
+.about {
+  color: #b2b0b0;    
+}
+  .about img {
+    background-color: white;    
+    border-radius: 50%;
+    border-radius: 50%; 
+    border: 4px solid #ccc;     
+    max-width: 200px;   
+  }
+
+/* main styles */
+
+main {
+  background-color: white;
+  padding: 16px;
+  color: #b2b0b0;
+}
+
+  .project {
+    margin-bottom: 48px;
+  }
+
+  .project:nth-of-type(1) {  
+    margin-top: 32px;
+  }
+
+h1,
+h2,
+h3 {
+  color: #222;  
+}
+
+h1 {
+  font-size: 32px;
+  color: #36ACD0;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+/* footer styles */
+
+footer {
+  color: #b2b0b0;
+  min-height: 30px;
+  padding: 16px;
+  width: 100%;
+}
+
+.footer__nav {
+  margin-top: 32px;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+}
+
+.footer__nav p {
+  display: inline-block;
+  width: 49.3%;
+}
+
+.footer__nav p:first-child {
+  text-align: left;
+}
+
+.footer__nav p:last-child {
+  text-align: right;
+}
+
+.footer__top {
+  text-align: right;
+}
+
+.footer__nav ul {
+  display: none;
+}
+
+
+.wrapper,
+.clearfix {
+  clear: both;
+  display: table;
+}
+
+/* Styles for the tablet screens */
+
+@media screen and (min-width: 768px) {
+
+  .col,
+  .col-half {
+    width: 50%;
+    padding: 0 2%;
+    float: left;
+  }
+
+  .col:nth-of-type(2)
+  .col-half:nth-of-type(2) {
+    clear: both;
+    display: table;  
+  }
+
+  .nav {
+    margin-bottom: 32px;
+  }
+
+  .nav li {
+    background-color: transparent;
+    display: inline-block;
+    min-width: 120px;
+  }
+
+  .about {
+    text-align: left;
+  }
+
+  .about p:first-child {
+    margin-top: 0;
+  }
+
+  .about .col-half:nth-of-type(1) {
+      float: right;
+      text-align: center;
+      background-color: #ebebeb;
+      padding: 24px;  
+  }
+  .about .col-half:nth-of-type(2) {
+    float: left;    
+    padding: 0 32px; 
+  }
+
+  /** flip image too because looking the wrong way :-( */
+  .about img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-filter: "FlipH"; 
+    filter: FlipH;
+    transform: scaleX(-1);
+  }
+
+  .project:nth-of-type(1) {  
+    margin-top: initial;
+  }
+
+  footer p {
+    max-width: 75%;
+    margin: 16px auto;
+  }
+
+  .footer__nav p {
+    float: left;
+  }
+
+  .footer__nav .footer__top {
+    display: none;
+  }
+
+  .footer__nav ul {
+    display: inline-block;
+    list-style: none;  
+    float: right;
+  }
+
+  .footer__nav li {
+    display: inline-block;
+    float: left;
+    margin: 0 16px;
+  }
+
+} 
+
+/* Styles for the desktop screens & beyond */
+
+
+@media screen and (min-width: 1024px) {
+
+  header .wrapper:nth-of-type(1) {
+    padding: 24px 0;
+  }
+
+  .nav {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .col {
+    width: 33%;
+    padding: 0 2%;
+    float: left;
+  }
+
+  .col-lrg {
+    width: 50%;
+    padding: 0 2%;
+    float: left;
+  }  
+
+
+
+}
+

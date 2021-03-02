@@ -1,0 +1,86 @@
+// -------------------
+// placeholders
+// -------------------
+// 
+// links, headlines , images, nav
+// 
+
+
+%nav-item-horz {
+  @include mq(medium) {
+    display: inline-block;
+    margin: 0 em(12px);
+  }
+}
+
+%nav-item-link {
+	border-radius: $br;
+	color: $color-body;	
+	display: block;
+	font-weight: normal;	
+	margin: 0.5em 0;
+	padding: 0.5em;
+	text-align: center;
+	text-decoration: none;
+  @include mq(small) {
+    border-bottom-color: palette(grey, xx-light);
+    padding-top: em(14px, 18px);
+    padding-bottom: em(14px, 18px);
+  }
+}
+
+%nav-item-on {
+	background-color: $teal;
+	color: $white;
+	text-decoration: none;
+}
+
+
+%link {
+	color: $color-link-default;
+
+
+	&:hover {
+		color: lighten($color-link-default, 30%);
+	}
+
+	&:visited {
+		color: $color-link-visited;
+	}
+}
+
+%center-align {
+	text-align: center;
+}
+
+// Center elements
+.centered {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%btn {
+	border-radius: $br;
+	border: none;
+	color: $white;	
+	padding: 0.75em;	
+	text-transform: uppercase;
+	@include mq(medium) {	
+		max-width: 200px;
+	}
+}
+
+%img {
+	max-width: 100%;
+	margin: 1em auto;
+	display: block;	
+}

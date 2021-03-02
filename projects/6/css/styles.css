@@ -1,0 +1,126 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  background: #fff;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+.col,
+.wrapper, 
+.col-half {
+  width: 100%;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* header styles */
+header {
+  padding: 0 16px;  
+}
+
+
+/* main styles */
+main {
+  background-color: white;
+  padding: 16px;
+  color: #000;
+  font-weight: 500;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.video__wrapper {
+  margin: 0 auto;
+  display: block;
+}
+
+.captions span {
+  cursor: pointer;
+}
+
+/** custom player styles **/
+.mejs__container .mejs__inner .mejs__controls {
+  background-color: black;
+}
+
+.mejs__overlay.mejs__layer.mejs__overlay-play {
+  background-color: orange;
+}
+
+h1,
+h2,
+h3 {
+  color: #222;  
+}
+
+h1 {
+  font-size: 32px;
+  color: #36ACD0;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.active {
+  color: orange;
+  font-weight: 500;
+}
+
+/* footer styles */
+.wrapper,
+.clearfix {
+  clear: both;
+  display: table;
+}
+
+/* Styles for the tablet screens */
+@media screen and (min-width: 768px) {
+
+  .col,
+  .col-half {
+    width: 50%;
+    padding: 0 2%;
+    float: left;
+  }
+
+  .col:nth-of-type(2)
+  .col-half:nth-of-type(2) {
+    clear: both;
+    display: table;  
+  }
+  
+
+} 
+
+/* Styles for the desktop screens & beyond */
+@media screen and (min-width: 1024px) {
+
+}
+

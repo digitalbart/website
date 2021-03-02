@@ -1,0 +1,17 @@
+
+
+// Calculate em values
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}
+
+//
+@function g-context($g-col-width, $g-col-count ,$g-gutter-width) {
+  $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count - 1));
+  @return $g-context;
+}
+
+// build colors
+@function palette($palette, $shade: 'base') {
+	@return map-get(map-get($color-palettes, $palette), $shade);
+}
